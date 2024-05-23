@@ -651,3 +651,33 @@ th {
     width: fit-content;
        
 }
+
+
+/* audio */
+.estilo-audio {
+    width: 75%; /* Ajusta el ancho según tus necesidades */
+    max-width: 600px; /* Limita el ancho máximo */
+    border: none; /* Elimina los bordes predeterminados */
+    border-radius: 50px; /* Esquinas redondeadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 
+                0 6px 20px rgba(0, 0, 0, 0.1); /* Sombra elegante */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición para animaciones */
+}
+
+.estilo-audio:hover {
+    transform: scale(1.02); /* Agranda ligeramente el elemento al pasar el ratón por encima */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 
+                0 12px 40px rgba(0, 0, 0, 0.2); /* Sombra más intensa al pasar el ratón */
+}
+
+/* Opcional: Estilo adicional para controles personalizados */
+.estilo-audio::-webkit-media-controls-panel {
+    background-color: #333; /* Color de fondo de los controles */
+    border-radius: 10px; /* Esquinas redondeadas para los controles */
+}
+
+.estilo-audio::-webkit-media-controls-play-button,
+.estilo-audio::-webkit-media-controls-pause-button,
+.estilo-audio::-webkit-media-controls-mute-button {
+    filter: invert(100%); /* Invierte el color de los iconos para que sean visibles sobre el fondo oscuro */
+}
